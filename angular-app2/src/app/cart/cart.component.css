@@ -1,0 +1,16 @@
+.all{margin-top: 50px;}
+
+.all .left .product{display: flex;}
+.all .left{margin-left: 80px;}
+.all .left .image{width: 120px;height: 170px;margin: 0 50px 20px 0;}
+.all .left img{border-radius: 6px;width: 100%;height: 100%;}
+.all .left h5{margin: 0 0 20px;font-weight: bold;}
+.all .delete{margin-top:20px}
+.all .left p{font-weight: 500;}
+.all .left p select{width: 70px;outline: none;text-align: center;margin-left: 10px;}
+.all .left .total{font-size: 30px;}
+.all .left .total button{margin: -8px 25px 0;}
+
+.all .right{margin-left: 50px;}
+.all .right p{margin-top: 10px;font-weight: bold;font-size: 22px;}
+.all .right input{width: 60%;padding: 5px 10px;}

@@ -1,0 +1,27 @@
+<app-select></app-select>
+
+<div class="products">
+
+  <div *ngFor="let product of products; let i=index" class="product">
+
+    <div class="image" routerLink="/product/{{product.id}}">
+        <img src="{{product.url}}" alt="">
+    </div>
+
+    <div class="comp">
+      <p>{{product.name}}</p>
+      <p>${{product.price}}</p>
+
+      <select #products (change)="onSelected(products.value,i)">
+        <option>0</option>
+        <option *ngFor="let num of numbers">{{num}}</option>
+      </select>
+
+      <br>
+      <button class="btn btn-primary" (click)="buy(products.value,i)">Add to Cart</button>
+
+    </div>
+
+  </div>
+
+</div>

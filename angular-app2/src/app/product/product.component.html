@@ -1,0 +1,27 @@
+<app-select></app-select>
+<div class="all">
+<div class="information">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg">
+        <img src="{{data.url}}" alt="">
+      </div>
+      <div class="col-lg">
+        <div class="info">
+           <h3>{{data.name}}</h3>
+          <p class="price">${{data.price}}</p>
+          <p>{{data.description}}</p>
+          <select #products (change)="onSelected(products.value,data.id)">
+            <option>0</option>
+            <option *ngFor="let num of numbers">{{num}}</option>
+          </select>
+
+          <br>
+          <button class="btn btn-primary" (click)="addToCart(data.id,products.value)">Add to Cart</button>
+          <p class="back" routerLink="/">Back to product list</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

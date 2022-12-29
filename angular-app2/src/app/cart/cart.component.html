@@ -1,0 +1,56 @@
+<app-select></app-select>
+
+<div class='all'>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md">
+        <div class="left">
+          <div *ngFor="let product of data; let i=index" class="product">
+            <div class="image">
+              <img src="{{product.items.url}}" alt="">
+            </div>
+
+            <div class="info">
+              <h5>{{product.items.name}}</h5>
+              <p class="price">${{product.items.price}}</p>
+              <p>Amount:
+                <select #products (change)="onSelected(products.value,i)">
+                  <option>{{product.quantity}}</option>
+                  <option *ngFor="let num of numbers; let i=index">{{num}}</option>
+                </select>
+                <br>
+                <button class="btn btn-primary delete" (click)="deleteProduct(i)">Delete Product</button>
+            </div>
+
+          </div>
+
+          <p class="total">Total: ${{total}}<button (click)="reload()" class="btn btn-primary update">Updata Price </button></p>
+        </div>
+
+      </div>
+
+      <div class="col-md">
+        <div class="right">
+          <form #form="ngForm" (ngSubmit)="onSubmit()">
+
+            <p>Full Name</p>
+            <input type="text" name="username" required minlength="3" placeholder="minimum 3 charcters" [(ngModel)]="username">
+
+            <p>Address</p>
+            <input type="text" name="address" required minlength="6" placeholder="minimum 6 charcters" [(ngModel)]="address">
+
+            <p>Credit card number</p>
+            <input type="text" name="credit" required minlength="16" placeholder="16-digit number" [(ngModel)]="credit">
+
+            <p style="font-weight: 100;font-size: 16px;">we'll never share your data</p>
+            <button class="btn btn-primary" type="submit" [disabled]="form.invalid" (click)="sendToCongrats()">Submit</button>
+
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>

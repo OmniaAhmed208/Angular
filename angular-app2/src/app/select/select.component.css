@@ -1,0 +1,12 @@
+.nav{
+  background-color: rgb(109, 181, 223);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.nav h2{color: #fff;}
+.nav div{margin: -72px 0 0;color: #fff;font-size: 18px;}
+.nav span{cursor: pointer;}
+.nav a{color: #fff;text-decoration: none;}

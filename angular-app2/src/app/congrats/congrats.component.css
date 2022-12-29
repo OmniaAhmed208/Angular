@@ -1,0 +1,14 @@
+.congrats{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 150px;
+  text-align: center;
+}
+.congrats .info h1{color: #0bb2b2;font-size: 60px;}
+.congrats .info h1 span{font-size:40px;}
+
+.congrats .info p{font-weight: 500; margin: 20px 0; font-size: 20px;}
+.congrats .info p span{font-weight: bold;}
+
