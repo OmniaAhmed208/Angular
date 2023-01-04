@@ -37,7 +37,6 @@ export class CartComponent {
   }
 
   onSubmit():void{
-
     username:this.username;
     address:this.address;
     credit:this.credit

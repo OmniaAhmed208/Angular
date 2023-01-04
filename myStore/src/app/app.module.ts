@@ -10,7 +10,8 @@ import { HomeComponent } from './home/home.component';
 import { CartComponent } from './cart/cart.component';
 import { ProductComponent } from './product/product.component';
 import { CongratsComponent } from './congrats/congrats.component';
-import { SelectComponent } from './select/select.component';
+import { ConfirmationComponent } from './confirmation/confirmation.component';
+import { HeaderComponent } from './header/header.component';
 // import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
@@ -20,7 +21,8 @@ import { SelectComponent } from './select/select.component';
     CartComponent,
     ProductComponent,
     CongratsComponent,
-    SelectComponent,
+    ConfirmationComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,

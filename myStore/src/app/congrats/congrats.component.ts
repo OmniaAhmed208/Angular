@@ -21,7 +21,7 @@ export class CongratsComponent {
       this.total = params.total
     });
 
-    this.clear()
+    // this.clear()
   }
 
   clear(){

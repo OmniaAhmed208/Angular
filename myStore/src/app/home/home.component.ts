@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
 import productData from '../product.json';
-import {Product} from '../models/product'; 
+import {Product} from '../models/product';
 import {CartService} from '../services/cart.service';
-import { provideCloudflareLoader } from '@angular/common';
 
 @Component({
   selector: 'app-home',
@@ -18,7 +17,6 @@ export class HomeComponent {
 
   numbers:number[]=[1,2,3,4,5,6,7,8];
   selectedProduct = '';
-  add:number=-1;
 
   constructor(private cart: CartService){}
 
@@ -60,7 +58,7 @@ export class HomeComponent {
               }
               else(console.log(false))
             }
-            
+
           }
           else{
             this.data.push(productData);
