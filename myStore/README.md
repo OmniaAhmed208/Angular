@@ -40,7 +40,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 -When selecting products, it is not allowed to add an item with a value of 0 to the cart.
 
--If you choose the product by the number you want and you choose again, it will modify the old number of the product by function called onSelected brings value and function is called buy adds the product by number.
+-If you choose the product by the number you want and you choose again, it will modify the old number of the product by function called (onSelected) brings value which called by `ngModelChange` and function is called (buy) adds the product by number.
 
 ## Product Description (Product)
 
